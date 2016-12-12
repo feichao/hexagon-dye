@@ -1,0 +1,51 @@
+html,
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#hex-wrap {
+  background-color: #14202f;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+#hex-wrap::before {
+  background-image: url(./hexagon.png);
+  background-size: 120px;
+  content: '';
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+#hex-dye {
+  animation: dye 10s infinite;
+  background-image: radial-gradient(transparent 0%, #1420af 50%, #14202f 100%);
+  border-radius: 50%;
+  content: '';
+  height: 360px;
+  position: fixed;
+  transform: scale3d(0, 0, 0);
+  width: 360px;
+  z-index: 1;
+}
+
+@keyframes dye {
+  0% {
+    opacity: 1;
+    transform: scale3d(0, 0, 0);
+  }
+  50% {
+    opacity: 0;
+    transform: scale3d(1, 1, 1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale3d(0, 0, 0);
+  }
+}
