@@ -24,14 +24,14 @@ body {
 }
 
 #hex-dye {
-  animation: dye 5s infinite;
-  background-image: radial-gradient(transparent 0%, #1420af 50%, #14202f 100%);
+  animation: dye 10s infinite;
+  background-image: radial-gradient(transparent 0%, #1420af 80%, #14202f 100%);
   border-radius: 50%;
   content: '';
   height: 360px;
   position: absolute;
   transform: scale3d(0, 0, 0);
-  transform-origin: top left;
+  transform-origin: left top;
   width: 360px;
   z-index: 1;
 }
@@ -41,7 +41,7 @@ body {
     opacity: 1;
     transform: scale3d(0, 0, 0);
   }
-  50% {
+  40% {
     opacity: 0;
     transform: scale3d(1, 1, 1);
   }
