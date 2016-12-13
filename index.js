@@ -31,4 +31,4 @@ setInterval(function() {
   hexDye.style.top = lengthPx(getTop);
   hexDye.style.width = lengthPx(getWidth);
   hexDye.style.height = lengthPx(getWidth);
-}, 10000);
+}, 5000);

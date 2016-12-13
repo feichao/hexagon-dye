@@ -15,7 +15,7 @@ body {
 
 #hex-wrap::before {
   background-image: url(./hexagon.png);
-  background-size: 120px;
+  background-size: 180px;
   content: '';
   height: 100%;
   position: fixed;
@@ -24,7 +24,7 @@ body {
 }
 
 #hex-dye {
-  animation: dye 10s infinite;
+  animation: dye 5s infinite;
   background-image: radial-gradient(transparent 0%, #1420af 50%, #14202f 100%);
   border-radius: 50%;
   content: '';
