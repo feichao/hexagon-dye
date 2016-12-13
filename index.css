@@ -29,8 +29,9 @@ body {
   border-radius: 50%;
   content: '';
   height: 360px;
-  position: fixed;
+  position: absolute;
   transform: scale3d(0, 0, 0);
+  transform-origin: top left;
   width: 360px;
   z-index: 1;
 }
